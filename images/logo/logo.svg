@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 19" width="237" height="19">
+	<title>Header</title>
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 24px;fill: #222222;font-weight: 700;font-family: "Montserrat-Bold", "Montserrat" } 
+		.txt1 { font-size: 24px;fill: #222222;font-weight: 400;font-family: "Montserrat-Regular", "Montserrat" } 
+	</style>
+	<g id="Header">
+		<text id="logo" style="transform: matrix(1,0,0,1,0,18)" >
+			<tspan x="0" y="0" class="txt0" dx="0 1 1 1 1 1" >AVENUE</tspan><tspan  y="0" class="txt1" dx="0 1 1 1 1 1 1 1 1" > FASHION
+</tspan>
+		</text>
+	</g>
+</svg>

@@ -1,0 +1,113 @@
+.main-registration {
+    padding-top: 60px;
+    margin-bottom: 120px;
+    &__body {
+        @include flex(space-between);
+    }
+    &__signin {
+        flex: 0 0 50%;
+        padding: 10px;
+    }
+
+    &__register {
+        flex: 0 0 50%;
+        padding: 10px;
+    }
+
+    .main-form {
+        &__sign {
+            margin-top: 45px;
+            input {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__register {
+            margin-top: 45px;
+            input {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .singin-btn {
+        @include flex(space-between, center);
+        &__forgot {
+            @include font($Roboto, 1.5em);
+            @include text($hoverColor, left, capitalize);
+            span {
+                position: relative;
+                top: 2px;
+                left: 2px;
+            }
+        }
+    }
+
+    .register {
+        &__check {
+            position: relative;
+            @include flex(space-between, center);
+            @include font($Roboto, 1.5em);
+            @include text($formCheckColor);
+            margin-bottom: 30px;
+
+            label {
+                position: relative;
+                left: 8%;
+                display: block;
+                cursor: pointer;
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: -4px;
+                    left: -45px;
+                    width: 24px;
+                    height: 24px;
+                    border: 1px solid #e7e7e7;
+                    background-color: rgba(51, 51, 51, 0);
+                    transition: all 0.3s ease;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0px;
+                    left: -41px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: $hoverColor;
+                    border-radius: 3px;
+                    transform: scale(0);
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            #registerAgreement:checked + label::after {
+                transform: scale(1);
+            }
+        }
+
+        &__create {
+            @include flex(space-between, center);
+            span {
+                flex: 0 0 50%;
+                @include font($Roboto, 1.5em);
+                @include text($formCheckColor, right);
+            }
+
+            .policy {
+                color: $hoverColor;
+                span {
+                    position: relative;
+                    top: 2px;
+                    color: $hoverColor;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

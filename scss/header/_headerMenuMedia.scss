@@ -1,0 +1,44 @@
+@media screen and (max-width: 1919px) {
+    .header-menu {
+        .nav-menu {
+            &__hover {
+                padding: 20px;
+                left: -105px;
+            }
+        }
+
+        .menu-hover {
+            &__content {
+                margin-bottom: 25px;
+            }
+            &__products {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .header-menu {
+        min-height: 85px;
+        &__logo {
+            flex: 0 0 30%;
+        }
+        &__content {
+            flex: 0 0 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .header-menu {
+        .menu-hover {
+            &__content {
+                margin-bottom: 25px;
+            }
+            &__products {
+                margin-top: 10px;
+            }
+        }
+    }
+}

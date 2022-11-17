@@ -1,0 +1,31 @@
+.main-top {
+    position: relative;
+    min-height: 810px;
+    background-color: $headerfooterbcg;
+    margin-bottom: 100px;
+    &__man {
+        position: absolute;
+        top: -110px;
+        z-index: 1;
+    }
+
+    &__logo {
+        padding-top: 100px;
+        position: sticky;
+        @include flex(space-between);
+        z-index: 2;
+        span {
+            display: block;
+            @include font($Montserrat, 40em, 700);
+            @include text($footerTitleColor, center, uppercase);
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+        position: sticky;
+        z-index: 2;
+        margin-top: 60px;
+    }
+}

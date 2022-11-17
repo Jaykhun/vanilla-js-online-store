@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- ! The Styles Connect -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ! -->
+    <title>Orders</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="navigation">
+            <a href="./admin.html">users</a>
+            <a href="./products.html">products</a>
+            <a href="./orders.html" class="activeDot">orders</a>
+        </aside>
+
+        <div class="users">
+            <div class="users__title">
+                <span>client name</span>
+                <span>phone number</span>
+                <span>show orders</span>
+                <span>execute</span>
+            </div>
+
+            <!-- * Users Info -->
+            <div class="users__info"></div>
+            <!-- * Users Info End -->
+        </div>
+
+        <!-- * Popup -->
+        <div class="order-popup hide">
+            <div class="order-popup__body">
+                <div class="order-popup__title">
+                    <span>image</span>
+                    <span>type</span>
+                    <span>description</span>
+                    <span>price</span>
+                    <span>code</span>
+                    <span>discount</span>
+                    <span>count</span>
+                </div>
+
+                <div class="order-popup__content"></div>
+                <button class="order-popup__close">Close</button>
+            </div>
+        </div>
+    </div>
+    <!-- * Popup End -->
+    </div>
+
+    <script type="module" src="./scripts/orders.js"></script>
+</body>
+
+</html>

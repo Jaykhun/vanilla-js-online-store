@@ -1,0 +1,175 @@
+.header {
+    &__body {
+        background-color: #f8f8f8;
+    }
+}
+
+.header-top {
+    background-color: $topAndBottomBcgColor;
+    &__content {
+        @include flex(space-between, center);
+        height: 45px;
+    }
+
+    &__currency {
+        @include font($Montserrat, 1.3em, 400);
+        @include text($topAndBottomTxtColor);
+        line-height: 21px;
+    }
+
+    &__login {
+        @include flex(space-between, center);
+    }
+
+    &__btn {
+        margin-right: 80px;
+        a {
+            @include font($Montserrat, 1.3em, 400);
+            color: #999;
+            text-transform: capitalize;
+            line-height: 20px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    &__basket {
+        position: relative;
+        width: 147px;
+        margin: auto;
+        color: $headerTextColor;
+
+        .shop-icon {
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+
+        .basket {
+            position: relative;
+            @include font($Montserrat, 1.3em);
+        }
+
+        .basket::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 6px;
+            right: -20px;
+            width: 0px;
+            height: 0px;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 5px solid #fff;
+        }
+
+        .basket {
+            &__icon {
+                display: flex;
+                align-items: center;
+                background-color: $hoverColor;
+                height: 100%;
+                padding: 15px 25px;
+                cursor: pointer;
+                &:hover + .basket__body {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: all;
+                }
+            }
+
+            &__body {
+                position: absolute;
+                visibility: hidden;
+                pointer-events: none;
+                opacity: 0;
+                left: -315px;
+                width: 315%;
+                min-height: 120px;
+                padding: 25px;
+                background-color: #f8f8f8;
+                box-shadow: 1px 1px 10px 5px #0005;
+                z-index: 10;
+                transition: all 0.3s ease;
+                &:hover {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: all;
+                }
+            }
+
+            &__content {
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+
+            &__total {
+                margin-top: 30px;
+                @include flex(center);
+                span {
+                    display: block;
+                    @include font($Montserrat, 1.3em);
+                    @include text($headerMenuTxtColor, center);
+                    margin: 0px 2px;
+                }
+            }
+
+            &__footer {
+                margin-top: 13px;
+                @include flex(space-around);
+                button {
+                    padding: 8px 15px;
+                }
+            }
+        }
+
+        .basket-item {
+            @include flex(space-between, center);
+            margin-bottom: 10px;
+            &__info {
+                flex: 0 0 50%;
+                @include flex(flex-start, center);
+            }
+
+            &__img {
+                flex: 0 0 22%;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 1px solid $headerMenuTxtColor;
+                padding: 7px;
+            }
+
+            &__title {
+                flex: 0 0 81%;
+                margin-left: 10px;
+                @include font($Montserrat, 1.5em);
+                @include text($headerMenuTxtColor, center, capitalize);
+            }
+
+            &__control {
+                @include flex(flex-end, center);
+                flex: 0 0 50%;
+            }
+
+            &__btn {
+                flex: 0 0 35%;
+                margin-left: 10px;
+                padding: 5px 10px;
+            }
+
+            &__count {
+                @include font($Montserrat, 1.4em);
+                @include text($headerMenuTxtColor, center);
+                border-radius: 3px;
+                height: 25px;
+                border: 1px solid $searchColor;
+            }
+        }
+    }
+
+    .register {
+        margin-right: 30px;
+    }
+}

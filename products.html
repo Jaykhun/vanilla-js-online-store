@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- ! The Styles Connect -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ! -->
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="navigation">
+            <a href="./admin.html">users</a>
+            <a href="./products.html" class="activeDot">products</a>
+            <a href="./orders.html">orders</a>
+        </aside>
+
+        <div class="products">
+            <form action="#" class="products__form">
+                <div class="products__top">
+                    <input type="text" class="input-style _name-req _req" placeholder="Type" name="product"
+                        id="typeOfProduct">
+                    <input type="number" class="input-style _price-req _req" placeholder="Price" name="product"
+                        id="price">
+                    <input type="number" class="input-style" placeholder="Discount" name="product" id="discount">
+                </div>
+
+                <textarea name="product" class="_description-req _req" id="description" maxlength="350"
+                    placeholder="About product"></textarea>
+                <button class="btn btn-hover" id="addBtn">Add Product</button>
+            </form>
+
+            <div class="users">
+                <div class="users__products">
+                    <span>image</span>
+                    <span>type</span>
+                    <span>description</span>
+                    <span>price</span>
+                    <span>product code</span>
+                    <span>discount</span>
+                    <span>change</span>
+                    <span>delete</span>
+                </div>
+
+                <!-- * Users Info -->
+                <div class="users__info"></div>
+                <!-- * Users Info End -->
+            </div>
+        </div>
+
+        <!-- * Popup -->
+        <div class="product-popup hide">
+            <div class="product-popup__body">
+                <form class="product-popup__form">
+                    <div class="products__top">
+                        <input type="text" class="input-style _change-name-req __change-req" placeholder="Type"
+                            name="product" id="changeTypeOfProduct">
+                        <input type="number" class="input-style _change-price-req __change-req" placeholder="Price"
+                            name="product" id="changePrice">
+                        <input type="number" class="input-style" placeholder="Discount" id="changeDiscount"
+                            name="product">
+                    </div>
+
+                    <textarea name="product" class="_change-description-req __change-req" id="changeDescription"
+                        maxlength="350" placeholder="About product"></textarea>
+                </form>
+
+                <div class="product-popup__btn">
+                    <button class="product-popup__close">Close</button>
+                    <button class="product-popup__save">Save</button>
+                </div>
+            </div>
+        </div>
+        <!-- * Popup End -->
+
+        <!-- * Notification -->
+        <div class="notification-wrap"></div>
+        <!-- * Notification End -->
+    </div>
+    <script type="module" src="./scripts/products.js"></script>
+</body>
+
+</html>

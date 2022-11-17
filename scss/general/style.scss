@@ -1,0 +1,68 @@
+// * General styles
+@import "font";
+@import "reset";
+@import "variables";
+@import "ui";
+@import "mixin";
+// * Web styles
+@import "../header/headerTop.scss";
+@import "../header/headerMenu.scss";
+@import "../header/headerMenuMedia.scss";
+@import "../main/mainWelcome.scss";
+@import "../sign-in/signIn.scss";
+@import "../footer/footer.scss";
+@import "../main/mainHome.scss";
+@import "../main/mainHomeMedia.scss";
+@import "../main/mainHomeProduct.scss";
+@import "../popup/popup.scss";
+@import "../product-view/product.scss";
+// * Admin styles
+@import "../admin/admin.scss";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 2050px;
+    min-height: 100%;
+}
+
+.wrapp-container {
+    max-width: 1782px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 1190px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.change-bcg {
+    background-color: $hoverColor;
+}
+
+.activeDot {
+    background-color: $hoverColor;
+}
+
+._error {
+    border: 1px solid #bb5465;
+    background-color: rgb(151, 10, 40, 0.1);
+}

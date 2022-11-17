@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+select,
+option,
+button {
+    outline: none;
+    border: none;
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}

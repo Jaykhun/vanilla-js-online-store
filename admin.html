@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- ! The Styles Connect -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ! -->
+    <title>Admin</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <section class="admin">
+            <div class="container">
+                <div class="admin__body">
+                    <aside class="navigation">
+                        <a href="#" class="activeDot">users</a>
+                        <a href="./products.html">products</a>
+                        <a href="./orders.html">orders</a>
+                    </aside>
+
+                    <div class="admin__content">
+                        <form action="#" class="admin__from  main-form__register">
+                            <div class="admin__login">
+                                <label for="login">login</label>
+                                <input type="text" class="input-style _register-name _register-req" name="registerForm"
+                                    id="registerInputName">
+                            </div>
+
+                            <div class="admin__password">
+                                <label for="password">password</label>
+                                <input type="password" class="input-style _register-password _register-req"
+                                    name="registerForm" id="registerInputPassword">
+                            </div>
+
+                            <div class="admin__cunfirm">
+                                <label for="adminCunfirmPassword">cunfirm password</label>
+                                <input type="password" class="input-style _register-cunfirm _register-req"
+                                    name="registerForm" id="registerInputCunfirm">
+                            </div>
+
+                            <button class="admin__btn btn btn-hover" id="registerBtn">register</button>
+                        </form>
+
+                        <div class="users">
+                            <div class="users__title">
+                                <span>login</span>
+                                <span>password</span>
+                                <span>change</span>
+                                <span>delete</span>
+                            </div>
+
+                            <!-- * Users Info -->
+                            <div class="users__info"></div>
+                            <!-- * Users Info End -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- * Popup -->
+                <div class="admin-popup hide">
+                    <div class="admin-popup__body">
+                        <form class="admin-popup__form">
+                            <input type="text" class="input-style admin-popup__name _register-name _change-req" name="changeForm"
+                                id="changeUserName" placeholder="Login">
+                            <input type="text" class="input-style admin-popup__password _register-password _change-req" name="changeForm"
+                                id="changeUserPassword" placeholder="Password">
+                        </form>
+
+                        <div class="admin-popup__btn">
+                            <button class="admin-popup__close">Close</button>
+                            <button class="admin-popup__save">Save</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- * Popup End -->
+
+                <!-- * Notification -->
+                <div class="notification-wrap"></div>
+                <!-- * Notification End -->
+            </div>
+        </section>
+    </div>
+
+    <script type="module" src="./scripts/admin.js"></script>
+</body>
+
+</html>

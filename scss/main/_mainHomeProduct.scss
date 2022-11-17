@@ -1,0 +1,141 @@
+.main-product {
+    margin: 125px 0px;
+    &__body {
+        @include flex(space-between);
+    }
+
+    &__content {
+        @include flex(space-between, center, column);
+        padding: 20px;
+    }
+
+    &__little {
+        @include flex(space-between);
+    }
+
+    &__big {
+        margin-right: 0px;
+    }
+
+    &__item {
+        margin: 7px 7px 7px 0px;
+        flex: 0 0 50%;
+        transition: box-shadow 0.3s ease;
+        background-color: #f8f8f8;
+        &:hover {
+            box-shadow: 0 0 10px 5px #0002;
+        }
+
+        &:hover .product__description {
+            opacity: 1;
+            height: 140px;
+            box-shadow: 0 0px 10px 5px #0002;
+            margin-top: -3px;
+        }
+    }
+
+    &__product {
+        position: relative;
+    }
+}
+
+.product {
+    &__img {
+        img {
+            width: 830px;
+        }
+    }
+
+    &__price {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        @include font($Montserrat, 2.1em, 300);
+        color: $productPriceColor;
+        letter-spacing: 1px;
+    }
+
+    &__description {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 6;
+        @include flex(center, center, column);
+        width: 100%;
+        height: 0px;
+        opacity: 0;
+        overflow: hidden;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        padding: 10px 40px;
+    }
+
+    &__title {
+        @include font($Montserrat, 1.3em, 600);
+        @include text($hoverLinkColor, center, uppercase);
+    }
+
+    &__txt {
+        @include font($Roboto, 1.5em);
+        @include text($producTxtColor, center);
+        margin: 10px 0px;
+    }
+
+    &__btn {
+        button {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: $btnColor;
+            cursor: pointer;
+            @include font($Montserrat, 1.4em);
+            @include text(#fff, center);
+        }
+    }
+
+    &__buy {
+        transition: all 0.3s ease;
+        &::before {
+            content: "\e93a";
+            font-family: "icomoon";
+            display: block;
+        }
+        &:hover {
+            background-color: $hoverColor;
+            &::before {
+                color: #fff;
+            }
+        }
+    }
+
+    &__love {
+        margin: 0px 13px;
+        transition: all 0.3s ease;
+        &::before {
+            content: "\e9da";
+            font-family: "icomoon";
+            display: block;
+        }
+        &:hover {
+            background-color: $hoverColor;
+            &::before {
+                color: #fff;
+            }
+        }
+    }
+
+    &__resize {
+        transition: all 0.3s ease;
+        &::before {
+            content: "\ea42";
+            font-family: "icomoon";
+            display: block;
+        }
+        &:hover {
+            background-color: $hoverColor;
+            &::before {
+                color: #fff;
+            }
+        }
+    }
+}

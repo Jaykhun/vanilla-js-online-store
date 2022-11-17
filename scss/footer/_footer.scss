@@ -1,0 +1,101 @@
+.footer {
+    background-color: $headerfooterbcg;
+    &__bottom {
+        background-color: $topAndBottomBcgColor;
+
+        span {
+            flex: 0 0 50%;
+            display: block;
+            @include font($Montserrat, 1.3em);
+            color: #999999;
+        }
+    }
+}
+
+.footer-bottom {
+    &__body {
+        @include flex(space-between, center);
+        height: 45px;
+    }
+    &__link {
+        @include flex(flex-end, center);
+        flex: 0 0 50%;
+        a {
+            @include font($Montserrat, 1.3em);
+            color: $topAndBottomTxtColor;
+            margin-right: 35px;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+.footer-link {
+    padding-top: 60px;
+    @include flex(space-between);
+    &__content {
+        flex: 0 0 20%;
+    }
+
+    &__title {
+        @include font($Montserrat, 1.3em, 700);
+        @include text($footerTitleColor, left, uppercase);
+    }
+
+    &__item {
+        margin-top: 30px;
+    }
+
+    &__link {
+        display: block;
+        margin-bottom: 15px;
+        @include font($Montserrat, 1.4em, 300);
+        @include text($footerLinkColor, left);
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.footer-advertising {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    @include flex(space-between, center);
+
+    &__award {
+        @include flex(center, center, column);
+        flex: 0 0 50%;
+        margin-right: 10px;
+        min-height: 200px;
+        background-color: $topAndBottomBcgColor;
+        span {
+            display: block;
+            &:first-child {
+                @include font($Montserrat, 3.8em, 700);
+                @include text(#fff, center, uppercase, 2px);
+            }
+
+            &:nth-child(2) {
+                @include font($Montserrat, 3.8em);
+                @include text(#fff, center, uppercase, 2px);
+            }
+        }
+    }
+
+    &__icons {
+        @include flex(center, center);
+        flex: 0 0 50%;
+        min-height: 200px;
+        background-color: $hoverColor;
+        a {
+            display: block;
+            @include font($Montserrat, 3.8em);
+            color: #fff;
+            margin-right: 60px;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}

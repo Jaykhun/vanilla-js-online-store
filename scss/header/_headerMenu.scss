@@ -1,0 +1,182 @@
+.header-menu {
+    position: sticky;
+    z-index: 3;
+    @include flex(space-between, center);
+    min-height: 110px;
+    &__logo {
+        flex: 0 0 50%;
+        .logo-bold__txt {
+            @include font($Montserrat, 2.4em, 700);
+            @include text($headerMenuTxtColor, center, uppercase, 2px);
+            margin-right: 10px;
+        }
+
+        .logo-regular__txt {
+            @include font($Montserrat, 2.4em);
+            @include text($headerMenuTxtColor, center, uppercase, 2px);
+        }
+    }
+
+    &__content {
+        @include flex(space-between, center);
+        flex: 0 0 50%;
+    }
+
+    &__nav {
+        flex: 0 0 70%;
+    }
+
+    &__search {
+        position: relative;
+        input {
+            display: block;
+            flex: 0 0 25%;
+            height: 30px;
+            padding: 8px 12px;
+            // background-color: rgba(248, 248, 248, 0);
+            border: 1px solid #e7e7e7;
+            @include font($Montserrat, 1.4em);
+            color: $headerMenuTxtColor;
+            background-color: #fff;
+            &::-webkit-input-placeholder {
+                font-family: $Montserrat;
+                color: $searchColor;
+            }
+        }
+
+        .icon-search {
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            display: block;
+            width: 29px;
+            height: 28px;
+            background-color: #fff;
+            font-size: 1.5em;
+            cursor: pointer;
+            &::before {
+                position: absolute;
+                top: 5.5px;
+                right: 7.5px;
+                color: $searchColor;
+            }
+        }
+
+        .search__result {
+            position: absolute;
+            padding: 15px;
+            width: 100%;
+            max-height: 120px;
+            background-color: #fff;
+            overflow-y: scroll;
+            transition: all 0.3s ease;
+            @include font($Montserrat, 1.3em);
+            @include text($headerMenuTxtColor);
+        }
+
+        .search__result-item {
+            display: block;
+            @include text($headerMenuTxtColor, left, capitalize);
+            margin: 10px 0px;
+        }
+    }
+
+    .nav-menu {
+        @include flex(space-between, center);
+        &__list {
+            position: relative;
+            &:hover {
+                .nav-menu__link {
+                    color: $hoverColor;
+                }
+            }
+        }
+
+        &__link {
+            @include font($Montserrat, 1.3em, 700);
+            @include text($headerMenuTxtColor, right, uppercase, 1px);
+            line-height: 20px;
+            transition: color 0.3s ease;
+            padding-bottom: 30px;
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+
+        &__hover {
+            @include flex(space-between, flex-start, column);
+            position: absolute;
+            top: 45px;
+            padding: 30px 20px;
+            width: 432px;
+            min-height: 527px;
+            filter: drop-shadow(0px 17px 12px rgba(0, 0, 0, 0.14));
+            background-color: #f8f8f8;
+            transform: translate(0px, 8%);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            z-index: 13;
+            transition: all 0.3s ease;
+        }
+
+        &__body {
+            @include flex(space-between, flex-start);
+        }
+
+        &__footer {
+            width: 100%;
+            min-height: 200px;
+            background-color: #333;
+            padding: 50px 30px;
+        }
+
+        &__sale {
+            span {
+                display: block;
+                @include text(#fff, center, uppercase, 2px);
+            }
+            .sale-bold-title {
+                @include font($Montserrat, 3.6em, 700);
+            }
+
+            .sale-regular-title {
+                @include font($Montserrat, 3.6em, 400);
+            }
+        }
+    }
+
+    .menu-hover {
+        &__title {
+            @include font($Montserrat, 1.2em);
+            @include text($hoverBlogTitle, left, uppercase);
+        }
+
+        &__products {
+            margin-top: 30px;
+            padding-right: 75px;
+            a {
+                display: block;
+                @include font($Montserrat, 1.4em, 300);
+                @include text($hoverLinkColor, left, capitalize, 0.5px);
+                line-height: 30px;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $hoverColor;
+                }
+            }
+        }
+    }
+
+    .arrow:hover .nav-menu__hover {
+        opacity: 1;
+        pointer-events: all;
+        visibility: visible;
+        transform: translate(0px, 0px);
+    }
+
+    .arrow:hover::before {
+        border-top-color: $hoverColor;
+    }
+}
