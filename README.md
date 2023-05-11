@@ -1,11 +1,36 @@
-## Ave-Fashion Shop (Vanilla JavaScript E-commerce Website)
+<p align="center">
+      <img src="https://i.imgur.com/JrkfuHR.png">
+</p>
 
-My first vanilla javascript e-commerce website which; 
+<p>
+   <img src="https://img.shields.io/badge/languages-javascript-%23E9D44D" alt="languages">
+   <img src="https://img.shields.io/badge/license-MIT-%23A10000" alt="license">
+</p>
 
-* adds and removes items to the cart
-* increase and decrease the number of items in the cart
-* store the items in the cart in indexedDB
-* automatically calculates the total price of items in the cart based on how many items are currently in the cart.
-* have an admin panel
+## About
 
-[![Ave-Fashion](https://dabuttonfactory.com/button.png?t=Live+Demo&f=Open+Sans-Bold&ts=16&tc=fff&hp=45&vp=20&w=180&h=40&c=round&bgt=unicolored&bgc=0275d8 "Click button to open live demo")](https://jaykhun.github.io/vanilla-js-online-store)
+Welcome to my online store, where you can browse and shop for a wide range of products from the comfort of your own home. My store is built using Vanilla JavaScript, and all the information about the products is stored in IndexedDB.
+
+You can easily search for products by using my search function, which allows you to find what you're looking for quickly and easily. Once you've found what you want, you can add it to your cart and continue shopping until you're ready to check out.
+
+To make your shopping experience as seamless as possible, I've also included registration and login functions. This means that you can create an account with me, save your details, and use them to log in every time you visit my store. This will also allow you to view your order history and track your current orders.
+
+In addition to the user-facing features, there is also an admin panel where the admin can manage the store. The admin can add new products to the store, manage user accounts, and view and change the status of orders. This ensures that the store is running smoothly and that orders are being fulfilled in a timely manner.
+
+All the information about your cart and your orders is stored in IndexedDB, so you can be sure that your data is safe and secure. Additionally, my website is available in three languages, making it easy for everyone to shop with me, regardless of where they're from.
+
+## Technologies Used
+My Project is built using the following technologies:
+
+- HTML
+- CSS
+- SCSS
+- Javascript
+
+## Developers
+
+- [Jaykhun](https://github.com/Jaykhun)
+
+## License
+
+Project react-ecommerce is distributed under the MIT license
