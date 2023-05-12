@@ -1,5 +1,5 @@
 <p align="center">
-<!--       <img src="https://imgur.com/dd027e59-e544-4f2c-a835-194ad2e2509e"> -->
+      <img src="https://www.simpleimageresizer.com/_uploads/photos/dbc4057c/Screenshot_1_0.png">
 </p>
 
 <p>
@@ -14,6 +14,10 @@ Welcome to my online store, where you can browse and shop for a wide range of pr
 You can easily search for products by using my search function, which allows you to find what you're looking for quickly and easily. Once you've found what you want, you can add it to your cart and continue shopping until you're ready to check out.
 
 To make your shopping experience as seamless as possible, I've also included registration and login functions. This means that you can create an account with me, save your details, and use them to log in every time you visit my store. This will also allow you to view your order history and track your current orders.
+
+<p align="center">
+      <img src="https://www.simpleimageresizer.com/_uploads/photos/dbc4057c/Screenshot_2_0.png">
+</p>
 
 In addition to the user-facing features, there is also an admin panel where the admin can manage the store. The admin can add new products to the store, manage user accounts, and view and change the status of orders. This ensures that the store is running smoothly and that orders are being fulfilled in a timely manner.
 
