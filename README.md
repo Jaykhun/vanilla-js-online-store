@@ -1,5 +1,5 @@
 <p align="center">
-      <img src="https://www.simpleimageresizer.com/_uploads/photos/dbc4057c/Screenshot_1_0.png">
+      <img src="https://i.imgur.com/gZ0GVlm.png">
 </p>
 
 <p>
@@ -16,7 +16,7 @@ You can easily search for products by using my search function, which allows you
 To make your shopping experience as seamless as possible, I've also included registration and login functions. This means that you can create an account with me, save your details, and use them to log in every time you visit my store. This will also allow you to view your order history and track your current orders.
 
 <p align="center">
-      <img src="https://www.simpleimageresizer.com/_uploads/photos/dbc4057c/Screenshot_2_0.png">
+      <img src="https://i.imgur.com/IEFljcH.png">
 </p>
 
 In addition to the user-facing features, there is also an admin panel where the admin can manage the store. The admin can add new products to the store, manage user accounts, and view and change the status of orders. This ensures that the store is running smoothly and that orders are being fulfilled in a timely manner.
